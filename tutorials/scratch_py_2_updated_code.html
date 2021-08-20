@@ -9,25 +9,25 @@
     <hr>
     <br>
     <p>
-      numberChosen = 0
+      numberChosen = 0<br>
       numberGuessed = 0
-
+      <br>
       import random
-
+      <br>
       numberChosen = random.randint(1, 5)
-
-
-      def game():
-          numberGuessed = int(input("Guess a number between 1 to 5 "))
-          if numberGuessed != numberChosen:
-              if numberGuessed < numberChosen:
-                  print("Number is too small!")
-                  game()
-              else:
-                  print("Number is too big!")
-                  game()
-          else:
-              print("Correct!")
-
-      game()
+      <br>
+      <br>
+      def game():<br>
+          numberGuessed = int(input("Guess a number between 1 to 5 "))<br>
+          if numberGuessed != numberChosen:<br>
+              if numberGuessed < numberChosen:<br>
+                  print("Number is too small!")<br>
+                  game()<br>
+              else:<br>
+                  print("Number is too big!")<br>
+                  game()<br>
+          else:<br>
+              print("Correct!")<br>
+      <br>
+      game()<br>
     </p>
