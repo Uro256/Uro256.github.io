@@ -6,3 +6,28 @@
   <body>
     <h1 style="font-family: 'Poppins', sans-serif;"><b>Python Scratch Tutorial</b></h1>
     <h4 style="font-family: 'Poppins', sans-serif;"><i>Updated Version</i></h4>
+    <hr>
+    <br>
+    <p>
+      numberChosen = 0
+      numberGuessed = 0
+
+      import random
+
+      numberChosen = random.randint(1, 5)
+
+
+      def game():
+          numberGuessed = int(input("Guess a number between 1 to 5 "))
+          if numberGuessed != numberChosen:
+              if numberGuessed < numberChosen:
+                  print("Number is too small!")
+                  game()
+              else:
+                  print("Number is too big!")
+                  game()
+          else:
+              print("Correct!")
+
+      game()
+    </p>
